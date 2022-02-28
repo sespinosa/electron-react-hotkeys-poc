@@ -16,7 +16,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "concurrently -k \"BROWSER=none npm start\" \"npm:electron\"",
+    "dev": "concurrently -k \"cross-env BROWSER=none npm start\" \"npm:electron\"",
     "electron": "wait-on tcp:3000 && electron-forge start",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -50,6 +50,7 @@
     "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
     "@electron-forge/maker-zip": "^6.0.0-beta.63",
     "concurrently": "^5.2.0",
+    "cross-env": "^7.0.3",
     "electron": "^9.1.1",
     "electron-devtools-installer": "^3.2.0",
     "wait-on": "^5.1.0"
@@ -57,8 +58,8 @@
   "config": {
     "forge": {
       "packagerConfig": {
-      	"icon": "src/icons/mac/icon.icns",
-    	"name": "Electron + React Global Hotkeys POC"
+        "icon": "src/icons/mac/icon.icns",
+        "name": "Electron + React Global Hotkeys POC"
       },
       "makers": [
         {
