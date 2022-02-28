@@ -24,3 +24,8 @@ As you see the global hotkeys are registered and everytime the events are trigge
 # Build to target operating system
 
 Right now, I only added the icon support for mac, in the future I will add support to multiple targets with icons and shit.
+
+## References
+
+- I used an excelent guide to setup the react + electron starter project, you can find it [here](https://dev.to/mandiwise/electron-apps-made-easy-with-create-react-app-and-electron-forge-560e)
+- The `electron` docs regarding *global shortcuts*, [here](https://www.electronjs.org/docs/latest/api/global-shortcut)
